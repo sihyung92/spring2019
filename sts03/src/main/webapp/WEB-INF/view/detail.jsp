@@ -16,6 +16,10 @@
 		if(${msg}){
 			$('h1').html('상세 페이지');
 			$('input,textarea').attr('readonly','readonly');
+			$('form').next().children(':last').children().click(function(){
+					$('.del').attr('method','POST').submit();
+					return false;
+				});
 			$('form button').hide();
 		}else{
 			$('h1').html('수정 페이지');
@@ -92,11 +96,14 @@
 					<a href="edit.bit?idx=${bean.num }" class="btn btn-default" role="button">수정</a>
 					</div>
 					<div class="btn-group" role="group">
-					<a href="delete.bit?idx=${bean.num }" class="btn btn-danger" role="button" >삭제</a>
+					<a href="#" class="btn btn-danger" role="button" >삭제</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<form class="del" action="delete.bit">
+		<input type="hidden" name="idx" value="${bean.num }"/>
+	</form>
 </body>
 </html>

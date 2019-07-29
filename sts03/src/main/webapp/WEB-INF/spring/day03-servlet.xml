@@ -25,6 +25,7 @@
 			<prop key="/bbs/detail.bit">detail</prop>
 			<prop key="/bbs/edit.bit">edit</prop>
 			<prop key="/bbs/update.bit">update</prop>
+			<prop key="/bbs/delete.bit">delete</prop>
 		</props>
 	</property>
 </bean>
@@ -58,6 +59,11 @@
 </bean>
 
 <!-- model controller beans -->
+<bean id="delete" class="com.bit.day03.controller.DeleteController">
+	<property name="dao" ref="dao"/>
+	<property name="supportedMethods" value="POST"/>
+</bean>
+
 <bean id="insert" class="com.bit.day03.controller.InsertController">
 	<property name="dao" ref="dao"/>
 	<property name="supportedMethods" value="POST"/>
