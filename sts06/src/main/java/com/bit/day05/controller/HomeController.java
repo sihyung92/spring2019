@@ -1,4 +1,4 @@
-package com.bit.day05;
+package com.bit.day05.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
