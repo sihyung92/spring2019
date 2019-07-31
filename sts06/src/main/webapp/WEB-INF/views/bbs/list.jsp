@@ -15,9 +15,9 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-    console.log("ready!");
-});
+	$(document).ready(function() {
+	    console.log("ready!");
+	});
 </script>
 </head>
 <body>
@@ -42,6 +42,5 @@ $(document).ready(function() {
 		</c:forEach>		
 	</table>
 	<a class="btn btn-default" role="button" href="add">입 력</a>
-	
 </body>
 </html>
